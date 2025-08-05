@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blacklist Manifesto</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .hidden { display: none; }
+        .preamble {
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+        }
+        .continue-btn {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: white;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        .list-screen {
+            display: none;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 40px;
+            width: 100%;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .person-card {
+            cursor: pointer;
+            text-align: center;
+            width: 150px;
+        }
+        .person-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .crimes-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #111;
+            color: white;
+            padding: 30px;
+            border: 2px solid white;
+            max-width: 500px;
+            display: none;
+            z-index: 999;
+        }
+        .close-btn {
+            margin-top: 20px;
+            padding: 5px 15px;
+            background: white;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Preamble Screen -->
+    <div id="preamble" class="preamble">
+        <p>The governments of the world have failed us. Justice is dead. Our leaders and their coteries have made it their mission to protect their kin from the very laws they designed to keep our society safe. Criminals run free through our cities as their victims are being punished for daring to ask for justice.</p>
+        <p>The dark tendrils of corruption have dug too deep. It is our conviction that the system has been irrevocably broken by the criminals that have risen to power through deceit, theft and violence. We believe it is high time our oppressors have a taste of their own medicine.</p>
+        <p>Our mission is thus: The severance of those tendrils from our society by any means necessary. We believe the current justice system to be too lenient on those who have, guided by greed and pride, inflicted great suffering on the people. The only way to purge the tumor of corruption is to take severe action against those that think themselves safe from justice.</p>
+        <p>You may hide in your multi-million dollar mansions, run away from us in your sports cars, but soon enough the darkness you’ve left behind will find you.</p>
+        <p>This is your first and only warning.</p>
+        <p>We are the darkness. We are the blacklisters.</p>
+        <p><strong>Iustitia in tenebris.</strong></p>
+        <button class="continue-btn" onclick="showList()">Continue</button>
+    </div>
+
+    <!-- List Screen -->
+    <div id="listScreen" class="list-screen"></div>
+
+    <!-- Crimes Popup -->
+    <div id="crimesPopup" class="crimes-popup">
+        <h2 id="personName"></h2>
+        <ul id="crimeList"></ul>
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+
+    <!-- External JS Data -->
+    <script src="data.js"></script>
+
+    <script>
+        function showList() {
+            document.getElementById('preamble').classList.add('hidden');
+            const listScreen = document.getElementById('listScreen');
+            listScreen.style.display = 'flex';
+
+            criminalList.forEach(person => {
+                const card = document.createElement('div');
+                card.className = 'person-card';
+                card.innerHTML = `
+                    <img src="${person.image}" alt="${person.name}">
+                    <p>${person.name}</p>
+                `;
+                card.addEventListener('click', () => showCrimes(person.name, person.crimes));
+                listScreen.appendChild(card);
+            });
+        }
+
+        function showCrimes(name, crimes) {
+            document.getElementById('personName').innerText = name;
+            const crimeList = document.getElementById('crimeList');
+            crimeList.innerHTML = '';
+            crimes.forEach(crime => {
+                const li = document.createElement('li');
+                li.innerText = crime;
+                crimeList.appendChild(li);
+            });
+            document.getElementById('crimesPopup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('crimesPopup').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
