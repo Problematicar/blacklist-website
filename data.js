@@ -136,5 +136,57 @@ const criminalList = [
             "Perpetuates militarized protection of fossil fuel interests abroad.",
             "Instrumental in turning Big Oil into a global disinformation machine against environmental justice."
         ]
+    },
+    {
+        name: "Donald Trump",
+        image: "criminals/Donald_Trump.jpg",
+        country: "USA",
+        crimes: [
+            "Incited an insurrection at the U.S. Capitol to overturn election results.",
+            "Engaged in repeated efforts to pressure election officials to 'find' votes and alter election outcomes.",
+            "Oversaw family separation policy at the border, leading to widespread human rights abuses.",
+            "Utilized executive power to challenge environmental regulations and withdraw from the Paris Agreement.",
+            "Appointed politically motivated judges to reshape the judiciary.",
+            "Used presidential authority to undermine democratic institutions and the rule of law.",
+            "Faced multiple investigations and impeachments for his actions in office."
+        ]
+    },
+    {
+        name: "Giorgia Meloni",
+        image: "criminals/Giorgia_Meloni.jpg",
+        country: "Italy",
+        crimes: [
+            "Led a far-right political coalition with roots in post-fascist movements.",
+            "Implemented policies targeting migrant rescues and restricting the operations of humanitarian ships.",
+            "Introduced legislation and rhetoric that critics argue undermine LGBTQ+ and civil rights.",
+            "Maintained a strong anti-immigrant stance and promoted nationalistic ideologies.",
+            "Pushed for policies that centralize power and challenge the independence of the judiciary.",
+            "Has been criticized for downplaying or excusing historical ties to fascism."
+        ]
+    },
+    {
+        name: "Jamie Dimon",
+        image: "criminals/Jamie_Dimon.jpg",
+        country: "USA",
+        crimes: [
+            "As CEO of JPMorgan Chase, led the bank through the 2008 financial crisis, which required a government bailout.",
+            "Oversaw billions in fines for misconduct, including mortgage fraud, foreign exchange rigging, and market manipulation.",
+            "Profited from investments in fossil fuels, driving environmental degradation.",
+            "Lobbied against stricter financial regulations following the crisis.",
+            "Maintained a business model that prioritizes profits over ethical practices, often at the expense of consumers."
+        ]
+    },
+    {
+        name: "Rupert Murdoch",
+        image: "criminals/Rupert_Murdoch.jpg",
+        country: "Australia",
+        crimes: [
+            "Built a global media empire accused of spreading misinformation and political propaganda.",
+            "Oversaw phone hacking scandals at his UK newspapers, leading to a public inquiry.",
+            "Used his media influence to undermine democratic processes and promote specific political agendas.",
+            "Faced criticism for the role of Fox News in amplifying false claims about elections and the COVID-19 pandemic.",
+            "Exerted political influence to weaken media regulations and increase market dominance.",
+            "Contributed to the polarization of public discourse through sensationalist and biased reporting."
+        ]
     }
 ];

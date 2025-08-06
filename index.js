@@ -82,7 +82,9 @@ function setupFilterButtons() {
         'USA': '🇺🇸',
         'Israel': '🇮🇱',
         'Saudi Arabia': '🇸🇦',
-        'Russia': '🇷🇺'
+        'Russia': '🇷🇺',
+        'Italy': '🇮🇹', // Added Italy flag
+        'Australia': '🇦🇺' // Added Australia flag
     };
 
     const allButton = document.createElement('button');
