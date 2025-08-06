@@ -1,7 +1,8 @@
 const criminalList = [
     {
-        name: "Ulf Mark Schneider (Former Nestlé CEO 2017-2024)",
+        name: "Ulf Mark Schneider",
         image: "criminals/Ulf_Mark_Schneider.jpg",
+        country: "Switzerland",
         crimes: [
             "Privatization & commodification of water resources in drought-affected regions.",
             "Aggressive infant formula marketing in poor countries, undermining breastfeeding and contributing to infant mortality.",
@@ -13,8 +14,9 @@ const criminalList = [
         ]
     },
     {
-        name: "Jeff Bezos (Founder of Amazon)",
+        name: "Jeff Bezos",
         image: "criminals/Jeff_Bezos.jpg",
+        country: "USA",
         crimes: [
             "Built a global empire on hyper-exploitation of warehouse workers, with inhumane quotas and surveillance.",
             "Crushed unionization efforts through aggressive union-busting and retaliatory firings.",
@@ -26,8 +28,49 @@ const criminalList = [
         ]
     },
     {
-        name: "Elon Musk (CEO of Tesla, SpaceX, X/Twitter, etc.)",
+        name: "Benjamin Netanyahu",
+        image: "criminals/Benjamin_Netanyahu.jpg",
+        country: "Israel",
+        crimes: [
+            "Orchestrated systemic apartheid policies against Palestinians, including illegal settlements, forced evictions, and military aggression.",
+            "Oversaw brutal bombing campaigns in Gaza resulting in mass civilian casualties and infrastructure destruction.",
+            "Weaponized surveillance technology (Pegasus spyware) against dissidents, journalists, and human rights activists.",
+            "Utilized far-right coalitions to erode judicial independence and democratic institutions.",
+            "Profiteered from arms trade and military-industrial partnerships with authoritarian regimes.",
+            "Expanded digital censorship and misinformation campaigns to silence opposition narratives.",
+            "Instrumental in normalizing military occupation as a tool of colonial expansion."
+        ]
+    },
+    {
+        name: "Mohammed bin Salman",
+        image: "criminals/Mohammed_bin_Salman.jpg",
+        country: "Saudi Arabia",
+        crimes: [
+            "Mastermind of the Yemen humanitarian crisis through relentless military intervention and blockade.",
+            "Ordered the brutal assassination of journalist Jamal Khashoggi inside a consulate.",
+            "Enforced draconian repression of dissent, imprisoning and executing political opponents and activists.",
+            "Instrumental in maintaining a petrostate economy fueling global climate catastrophe.",
+            "Greenwashing global image through 'Vision 2030' while maintaining medieval-style autocratic rule.",
+            "Expands surveillance state through cyberespionage and Pegasus spyware contracts."
+        ]
+    },
+    {
+        name: "Vladimir Putin",
+        image: "criminals/Vladimir_Putin.jpg",
+        country: "Russia",
+        crimes: [
+            "Oversaw brutal crackdowns on opposition, with widespread political imprisonment, assassinations, and censorship.",
+            "Directed aggressive military invasions of Ukraine, Georgia, and Crimea, leading to thousands of civilian deaths.",
+            "Weaponized state-owned energy monopolies to coerce global markets and undermine climate initiatives.",
+            "Facilitates kleptocratic oligarchy through state-corporate collusion and asset plundering.",
+            "Instrumental in exporting authoritarianism via Wagner Group mercenaries and cyber warfare.",
+            "Undermines labor rights, LGBTQ+ rights, and civil liberties within Russia and abroad."
+        ]
+    },
+    {
+        name: "Elon Musk",
         image: "criminals/Elon_Musk.jpg",
+        country: "USA",
         crimes: [
             "Relentlessly crushed labor organizing efforts, fired pro-union employees, and used intimidation tactics.",
             "Exploited lithium extraction, cobalt mining, and environmental destruction for 'green' tech profit.",
@@ -39,8 +82,9 @@ const criminalList = [
         ]
     },
     {
-        name: "Larry Fink (CEO of BlackRock)",
+        name: "Larry Fink",
         image: "criminals/Larry_Fink.jpg",
+        country: "USA",
         crimes: [
             "Manages over $10 trillion in assets, controlling essential industries and dictating global policies.",
             "Invests heavily in fossil fuels, weapons manufacturing, and companies complicit in human rights abuses.",
@@ -50,10 +94,11 @@ const criminalList = [
             "Profits from private prisons, surveillance tech, and war industries.",
             "Acts as unelected shadow government through financial control over sovereign nations."
         ]
-    }, <!-- THIS COMMA WAS MISSING -->
+    },
     {
-        name: "Mark Zuckerberg (CEO of Meta/Facebook)",
+        name: "Mark Zuckerberg",
         image: "criminals/Mark_Zuckerberg.jpg",
+        country: "USA",
         crimes: [
             "Engineered mass surveillance through Facebook, harvesting personal data for profit.",
             "Enabled genocides and ethnic violence by refusing to moderate hate speech in Myanmar, Ethiopia, and beyond.",
@@ -65,8 +110,9 @@ const criminalList = [
         ]
     },
     {
-        name: "Bill Gates (Microsoft Co-founder & Philanthrocapitalist)",
+        name: "Bill Gates",
         image: "criminals/Bill_Gates.jpg",
+        country: "USA",
         crimes: [
             "Built Microsoft’s empire on monopolistic practices and anti-competitive lawsuits.",
             "Greenwashed global health initiatives while perpetuating private patents over life-saving medicine.",
@@ -78,8 +124,9 @@ const criminalList = [
         ]
     },
     {
-        name: "Darren Woods (CEO of ExxonMobil)",
+        name: "Darren Woods",
         image: "criminals/Darren_Woods.jpg",
+        country: "USA",
         crimes: [
             "Continued ExxonMobil's decades-long cover-up of climate science to protect fossil fuel profits.",
             "Invested billions in new oil and gas extraction despite the climate emergency.",
